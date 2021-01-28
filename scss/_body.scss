@@ -31,11 +31,6 @@ body {
   opacity: 0.7;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-  position: relative;
-}
 a {
   text-decoration: none;
 }
@@ -46,6 +41,7 @@ a {
   align-items: center;
   text-align: center;
   z-index: 5;
+
   .logo {
     font-size: 2.75rem;
     font-weight: 700;
@@ -120,5 +116,31 @@ a {
     > span:nth-child(3) {
       transform: rotate(-45deg);
     }
+  }
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+.main {
+  width: 50vw;
+  height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+
+  background: linear-gradient(
+    to right top,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.5)
+  );
+  backdrop-filter: blur(1rem);
+  .glass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }

@@ -6,7 +6,7 @@
 
 body {
   position: relative;
-  background: url("../background1.svg");
+  background: url("../background1.svg") cover/center;
   background-repeat: no-repeat;
   background-color: #eee;
 }
@@ -31,24 +31,6 @@ body {
   top: 435%;
   left: 25%;
   opacity: 0.7;
-}
-
-.circle_1 {
-  position: absolute;
-  top: 410%;
-  left: 50%;
-}
-
-.circle_2 {
-  position: absolute;
-  top: 410%;
-  left: 50%;
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-  position: relative;
 }
 
 a {
@@ -140,5 +122,29 @@ a {
 
 .hamburger.active > span:nth-child(3) {
   transform: rotate(-45deg);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main {
+  width: 50vw;
+  height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  background: linear-gradient(to right top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+  backdrop-filter: blur(1rem);
+}
+
+.main .glass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
